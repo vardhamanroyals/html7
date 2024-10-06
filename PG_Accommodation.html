@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh PG Accommodation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #00695c; /* Dark teal background */
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .pg-info {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .pg-info h1 {
+            margin: 0;
+            color: #004d40; /* Darker teal */
+            font-size: 2.5rem;
+        }
+        .pg-info p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .meal-times {
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            color: #004d40; /* Darker teal for meal times */
+        }
+        .images {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .images img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin: 1rem;
+        }
+        .pricing-table {
+            background: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border-collapse: collapse; /* For cleaner table lines */
+        }
+        .pricing-table h2 {
+            text-align: center;
+            color: #004d40; /* Darker teal */
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .pricing-option {
+            border-bottom: 2px solid #004d40; /* Darker teal for lines */
+            padding: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .pricing-option:hover {
+            background-color: #e0f2f1; /* Light teal background on hover */
+            transform: scale(1.02);
+        }
+        .pricing-option:last-child {
+            border-bottom: none;
+        }
+        .pricing-option h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.8rem;
+        }
+        .pricing-option .details {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .pricing-option .price {
+            font-size: 1.8rem;
+            color: #00796b; /* Slightly lighter teal */
+            font-weight: bold;
+        }
+        .room-image {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .room-image img {
+            width: 100%;
+            max-width: 500px; /* Adjust as needed */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #004d40; /* Darker teal background */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PG Accommodation Options</h1>
+    </header>
+
+    <div class="container">
+        <div class="pg-info">
+            <h1>Ganesh PG</h1>
+            <p>Yeswanthpur, beside Maruthi Temple, Bengaluru</p>
+        </div>
+
+        <div class="meal-times">
+            <h2>Meal Timings</h2>
+            <p><strong>Breakfast:</strong> 7:30 AM to 9:30 AM</p>
+            <p><strong>Lunch:</strong> 12:30 PM to 2:30 PM</p>
+            <p><strong>Dinner:</strong> 7:30 PM to 10:30 PM</p>
+        </div>
+
+        <div class="images">
+            <p><h1>PG</h1></p>
+            <img src="pg.jpg" alt="Apartment Image"><br><br>
+            <p><h1>Parking Area</h1></p>
+            <img src="parking_slot.jpg" alt="Parking Space Image">
+        </div>
+
+        <div class="pricing-table">
+            <h2>Available Rooms and Pricing</h2>
+
+            <div class="pricing-option" data-info="8 Sharing: ₹3000">
+                <h3>8 Sharing</h3>
+                <div class="details">
+                    <p>Beds: Comfortable beds with individual storage.</p>
+                    <p>Food: Complimentary breakfast and dinner.</p>
+                    <p>Residency: Secure and clean environment.</p>
+                    <p>Parking: Available for residents.</p>
+                </div>
+                <div class="price">₹3000</div>
+                <div class="room-image">
+                    <img src="8_bed_room.jpg" alt="8 Sharing Room Image">
+                </div>
+            </div>
+
+            <div class="pricing-option" data-info="6 Sharing: ₹4000">
+                <h3>6 Sharing</h3>
+                <div class="details">
+                    <p>Beds: Comfortable beds with individual storage.</p>
+                    <p>Food: Complimentary breakfast and dinner.</p>
+                    <p>Residency: Secure and clean environment.</p>
+                    <p>Parking: Available for residents.</p>
+                </div>
+                <div class="price">₹4000</div>
+                <div class="room-image">
+                    <img src="6_bed_room.jpg" alt="6 Sharing Room Image">
+                </div>
+            </div>
+
+            <div class="pricing-option" data-info="4 Sharing: ₹5000">
+                <h3>4 Sharing</h3>
+                <div class="details">
+                    <p>Beds: Comfortable beds with individual storage.</p>
+                    <p>Food: Complimentary breakfast and dinner.</p>
+                    <p>Residency: Secure and clean environment.</p>
+                    <p>Parking: Available for residents.</p>
+                </div>
+                <div class="price">₹5000</div>
+                <div class="room-image">
+                    <img src="4_BED_ROOm.jpg" alt="4 Sharing Room Image">
+                </div>
+            </div>
+
+            <div class="pricing-option" data-info="3 Sharing: ₹6000">
+                <h3>3 Sharing</h3>
+                <div class="details">
+                    <p>Beds: Comfortable beds with individual storage.</p>
+                    <p>Food: Complimentary breakfast and dinner.</p>
+                    <p>Residency: Secure and clean environment.</p>
+                    <p>Parking: Available for residents.</p>
+                </div>
+                <div class="price">₹6000</div>
+                <div class="room-image">
+                    <img src="3_bed_room.jpg" alt="3 Sharing Room Image">
+                </div>
+            </div>
+
+            <div class="pricing-option" data-info="2 Sharing: ₹8000">
+                <h3>2 Sharing</h3>
+                <div class="details">
+                    <p>Beds: Comfortable beds with individual storage.</p>
+                    <p>Food: Complimentary breakfast and dinner.</p>
+                    <p>Residency: Secure and clean environment.</p>
+                    <p>Parking: Available for residents.</p>
+                </div>
+                <div class="price">₹8000</div>
+                <div class="room-image">
+                    <img src="2_bed_room.jpg" alt="2 Sharing Room Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ganesh PG. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.pricing-option').forEach(option => {
+            option.addEventListener('click', () => {
+                alert(option.getAttribute('data-info'));
+            });
+        });
+    </script>
+
+</body>
+</html>
